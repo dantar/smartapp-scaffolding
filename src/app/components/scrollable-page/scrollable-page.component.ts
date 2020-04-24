@@ -9,7 +9,14 @@ export class ScrollablePageComponent implements OnInit {
 
   constructor() { }
 
+  alist: string[];
+
   ngOnInit(): void {
+    this.alist = [];
+    for (let index = 0; index < 10; index++) {
+      this.alist.push('paragraph ' + index);
+      
+    }
   }
 
 }
